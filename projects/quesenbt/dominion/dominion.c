@@ -816,14 +816,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 		
     case village:
-      //+1 Card
-      drawCard(currentPlayer, state);
-			
-      //+2 Actions
-      state->numActions = state->numActions + 2;
-			
-      //discard played card from hand
-      discardCard(handPos, currentPlayer, state, 0);
+      activate_village(currentPlayer, handPos, state);
       return 0;
 		
     case baron:
@@ -1235,6 +1228,19 @@ int activate_smithy(int currentPlayer, int handPos, struct gameState *state){
 	}
 			
       //discard card from hand
+      discardCard(handPos, currentPlayer, state, 0);
+      return 0;
+}
+
+int activate_village(int currentPlayer, int handPos, struct gameState *state){
+
+      //+1 Card
+      drawCard(currentPlayer, state);
+			
+      //+2 Actions
+      state->numActions = state->numActions + 2;
+			
+      //discard played card from hand
       discardCard(handPos, currentPlayer, state, 0);
       return 0;
 }
