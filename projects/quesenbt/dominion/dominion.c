@@ -1114,19 +1114,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 		
     case salvager:
-      //+1 buy
-      state->numBuys++;
-			
-      if (choice1)
-	{
-	  //gain coins equal to trashed card
-	  state->coins = state->coins + getCost( handCard(choice1, state) );
-	  //trash card
-	  discardCard(choice1, currentPlayer, state, 1);	
-	}
-			
-      //discard card
-      discardCard(handPos, currentPlayer, state, 0);
+      activate_salvager(choice1, currentPlayer, handPos, state);
       return 0;
 		
     case sea_hag:
@@ -1247,6 +1235,24 @@ int activate_steward(int choice1, int choice2, int choice3, int currentPlayer, i
 	}
 			
       //discard card from hand
+      discardCard(handPos, currentPlayer, state, 0);
+      return 0;
+}
+
+int activate_salvager(int choice1, int currentPlayer, int handPos, struct gameState *state){
+
+      //+1 buy
+      state->numBuys++;
+			
+      if (choice1)
+	{
+	  //gain coins equal to trashed card
+	  state->coins = state->coins + getCost( handCard(choice1, state) );
+	  //trash card
+	  discardCard(choice1, currentPlayer, state, 1);	
+	}
+			
+      //discard card
       discardCard(handPos, currentPlayer, state, 0);
       return 0;
 }
