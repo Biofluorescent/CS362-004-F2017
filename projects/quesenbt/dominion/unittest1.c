@@ -25,7 +25,7 @@ int main() {
     // Move the current game state to a testing struct
     memcpy(&testGame, &game, sizeof(struct gameState));
 
-    printf("_____________TESTING getCost FUNTION____________");
+    printf("_____________TESTING getCost FUNTION____________\n");
     int output;
     output = getCost(treasure_map);
     printf("Treasure map, Expects: 4, Result: %d\n", output);
@@ -110,6 +110,6 @@ int main() {
 
     output = getCost(-1);
     printf("Now testing invalid card, Expect -1, Result: %d\n", output);
-    printf("____________getCost TESTS COMPLETE____________\n");
+    printf("____________getCost TESTS COMPLETE____________\n\n");
     return 0;
 }

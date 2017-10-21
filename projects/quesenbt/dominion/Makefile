@@ -57,6 +57,18 @@ unittest3: unittest3.c dominion.o rngs.o
 unittest4: unittest4.c dominion.o rngs.o
 	gcc -o unittest4 -g unittest4.c dominion.o rngs.o $(CFLAGS)
 
+unittestresults.out: cardtest1 cardtest2 cardtest3 cardtest4 unittest1 unittest2 unittest3 unittest4 dominion.o rngs.o
+	./cardtest1 > unittestresults.out
+	./cardtest2 >> unittestresults.out
+	./cardtest3 >> unittestresults.out
+	./cardtest4 >> unittestresults.out
+	./unittest1 >> unittestresults.out
+	./unittest2 >> unittestresults.out
+	./unittest3 >> unittestresults.out
+	./unittest4 >> unittestresults.out
+	gcov -b dominion.c >> unittestresults.out
+	cat dominion.c.gcov >> unittestresults.out
+
 all: playdom player testDrawCard testBuyCard badTestDrawCard cardtest1 cardtest2 cardtest3 cardtest4 unittest1 unittest2 unittest3 unittest4
 
 clean:
