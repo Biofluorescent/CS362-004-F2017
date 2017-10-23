@@ -1,0 +1,25 @@
+Tanner Quesenberry
+CS 362
+Code Coverage Quiz PDF
+
+
+In developing the code for the random testerm the first step I took was to look at the
+specifications for the tests. Upon examination, I saw that part of the test was comparing
+a state variable and a single char in order to increment the state up. So I implemented the 
+inputChar function to randomly select from a character array containing the 26 lowercase 
+alphabet and the special characters required in the testme function. This gives the probability
+of randomly selecting the right character to 1 in 35 which are great odds for a loop possibly running 
+thousands of times.
+
+Next I moved on to the inputString function and noticed that the testme function requires a string
+of length 6. So naturally I implemented the inputString function to loop 6 times and call the 
+inputChar function to generate my random string. However, I found out that getting one specific
+sequence of characters required by the testme function to take far too long. The odds to get the random 
+string of 'reset\0' were 1 in 35^6 (1,838,265,625). So I decided to restrict this to a character array in
+the inputString function that contained the 4 required letters and the null terminator. This greatly reduced
+the odds to get the randomly chosen string to 1 in 5^6 (15, 625).
+
+So, in order to produce the error message, the loop continually calls inputChar to get a random letter/symbol.
+Once the correct one is chosen the state increments until it maxes out at 9. Then the randomly chosen string
+is compared to the required on and outputs the error message when they match and the state is at 9. 
+The program then terminates.
