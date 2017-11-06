@@ -1,3 +1,114 @@
+_____________NOW TESTING VILLAGE____________
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+TEST FAIL: Incorrect player hand count.
+ALL TESTS SUCCESSFULLY RAN
+__________FINISHED TESTING VILLAGE______________
+
+File 'dominion.c'
+Lines executed:24.73% of 566
+Branches executed:25.66% of 417
+Taken at least once:16.55% of 417
+Calls executed:17.89% of 95
+Creating 'dominion.c.gcov'
+
         -:    0:Source:dominion.c
         -:    0:Graph:dominion.gcno
         -:    0:Data:dominion.gcda
