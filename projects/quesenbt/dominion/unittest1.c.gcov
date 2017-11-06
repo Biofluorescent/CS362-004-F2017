@@ -1,0 +1,180 @@
+        -:    0:Source:unittest1.c
+        -:    0:Graph:unittest1.gcno
+        -:    0:Data:unittest1.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/*
+        -:    2: * Tanner Quesenberry
+        -:    3: * Fall 2017 CS362
+        -:    4: * Unit test file for getCost function
+        -:    5: */
+        -:    6:
+        -:    7:#include "dominion.h"
+        -:    8:#include "dominion_helpers.h"
+        -:    9:#include "rngs.h"
+        -:   10:#include <stdio.h>
+        -:   11:#include <string.h>
+        -:   12:#include <stdlib.h>
+        -:   13:#include <assert.h>
+        -:   14:
+function main called 1 returned 100% blocks executed 100%
+        1:   15:int main() {
+        -:   16:
+        -:   17:    struct gameState testGame;
+        -:   18:    struct gameState game;
+        1:   19:    int k[10] = {adventurer, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy, council_room};
+        1:   20:    int gameSeed = 1000;
+        -:   21:
+        -:   22:    // Initialize the starting state for the game
+        1:   23:    initializeGame(2, k, gameSeed, &game);
+call    0 returned 100%
+        -:   24:
+        -:   25:    // Move the current game state to a testing struct
+        1:   26:    memcpy(&testGame, &game, sizeof(struct gameState));
+        -:   27:
+        1:   28:    printf("_____________TESTING getCost FUNTION____________\n");
+call    0 returned 100%
+        -:   29:    int output;
+        1:   30:    output = getCost(treasure_map);
+call    0 returned 100%
+        1:   31:    printf("Treasure map, Expects: 4, Result: %d\n", output);
+call    0 returned 100%
+        -:   32:
+        1:   33:    output = getCost(sea_hag);
+call    0 returned 100%
+        1:   34:    printf("Sea hag, Expects: 4, Result: %d\n", output);
+call    0 returned 100%
+        -:   35:
+        1:   36:    output = getCost(salvager);
+call    0 returned 100%
+        1:   37:    printf("Salvager, Expects: 4, Result: %d\n", output);
+call    0 returned 100%
+        -:   38:
+        1:   39:    output = getCost(outpost);
+call    0 returned 100%
+        1:   40:    printf("Outpost, Expects: 5, Result: %d\n", output);
+call    0 returned 100%
+        -:   41:
+        1:   42:    output = getCost(embargo);
+call    0 returned 100%
+        1:   43:    printf("Embargo, Expects: 2, Result: %d\n", output);
+call    0 returned 100%
+        -:   44:
+        1:   45:    output = getCost(cutpurse);
+call    0 returned 100%
+        1:   46:    printf("Cutpurse, Expects: 4, Result: %d\n", output);
+call    0 returned 100%
+        -:   47:
+        1:   48:    output = getCost(ambassador);
+call    0 returned 100%
+        1:   49:    printf("Ambassador, Expects: 3, Result: %d\n", output);
+call    0 returned 100%
+        -:   50:
+        1:   51:    output = getCost(tribute);
+call    0 returned 100%
+        1:   52:    printf("Tribute, Expects: 5, Result: %d\n", output);
+call    0 returned 100%
+        -:   53:
+        1:   54:    output = getCost(steward);
+call    0 returned 100%
+        1:   55:    printf("Steward, Expects: 3, Result: %d\n", output);
+call    0 returned 100%
+        -:   56:
+        1:   57:    output = getCost(minion);
+call    0 returned 100%
+        1:   58:    printf("Minion, Expects: 5, Result: %d\n", output);
+call    0 returned 100%
+        -:   59:
+        1:   60:    output = getCost(great_hall);
+call    0 returned 100%
+        1:   61:    printf("Great hall, Expects: 3, Result: %d\n", output);
+call    0 returned 100%
+        -:   62:
+        1:   63:    output = getCost(baron);
+call    0 returned 100%
+        1:   64:    printf("Baron, Expects: 4, Result: %d\n", output);
+call    0 returned 100%
+        -:   65:
+        1:   66:    output = getCost(village);
+call    0 returned 100%
+        1:   67:    printf("Village, Expects: 3, Result: %d\n", output);
+call    0 returned 100%
+        -:   68:
+        1:   69:    output = getCost(smithy);
+call    0 returned 100%
+        1:   70:    printf("Smithy, Expects: 4, Result: %d\n", output);
+call    0 returned 100%
+        -:   71:
+        1:   72:    output = getCost(remodel);
+call    0 returned 100%
+        1:   73:    printf("Remodel, Expects: 4, Result: %d\n", output);
+call    0 returned 100%
+        -:   74:
+        1:   75:    output = getCost(mine);
+call    0 returned 100%
+        1:   76:    printf("Mine, Expects: 5, Result: %d\n", output);
+call    0 returned 100%
+        -:   77:
+        1:   78:    output = getCost(gardens);
+call    0 returned 100%
+        1:   79:    printf("Gardens, Expects: 4, Result: %d\n", output);
+call    0 returned 100%
+        -:   80:
+        1:   81:    output = getCost(feast);
+call    0 returned 100%
+        1:   82:    printf("Feast, Expects: 4, Result: %d\n", output);
+call    0 returned 100%
+        -:   83:
+        1:   84:    output = getCost(council_room);
+call    0 returned 100%
+        1:   85:    printf("Council room, Expects: 5, Result: %d\n", output);
+call    0 returned 100%
+        -:   86:
+        1:   87:    output = getCost(adventurer);
+call    0 returned 100%
+        1:   88:    printf("Adventurer, Expects: 6, Result: %d\n", output);
+call    0 returned 100%
+        -:   89:
+        1:   90:    output = getCost(gold);
+call    0 returned 100%
+        1:   91:    printf("Gold, Expects: 6, Result: %d\n", output);
+call    0 returned 100%
+        -:   92:
+        1:   93:    output = getCost(silver);
+call    0 returned 100%
+        1:   94:    printf("Silver, Expects: 3, Result: %d\n", output);
+call    0 returned 100%
+        -:   95:
+        1:   96:    output = getCost(copper);
+call    0 returned 100%
+        1:   97:    printf("Copper, Expects: 0, Result: %d\n", output);
+call    0 returned 100%
+        -:   98:
+        1:   99:    output = getCost(province);
+call    0 returned 100%
+        1:  100:    printf("Province, Expects: 8, Result: %d\n", output);
+call    0 returned 100%
+        -:  101:
+        1:  102:    output = getCost(duchy);
+call    0 returned 100%
+        1:  103:    printf("Duchy, Expects: 5, Result: %d\n", output);
+call    0 returned 100%
+        -:  104:
+        1:  105:    output = getCost(estate);
+call    0 returned 100%
+        1:  106:    printf("Estate, Expects: 2, Result: %d\n", output);
+call    0 returned 100%
+        -:  107:
+        1:  108:    output = getCost(curse);
+call    0 returned 100%
+        1:  109:    printf("Curse, Expects: 0, Result: %d\n", output);
+call    0 returned 100%
+        -:  110:
+        1:  111:    output = getCost(-1);
+call    0 returned 100%
+        1:  112:    printf("Now testing invalid card, Expect -1, Result: %d\n", output);
+call    0 returned 100%
+        1:  113:    printf("____________getCost TESTS COMPLETE____________\n\n");
+call    0 returned 100%
+        1:  114:    return 0;
+        -:  115:}

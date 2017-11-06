@@ -1189,7 +1189,7 @@ int activate_adventurer(int currentPlayer, int drawntreasure, int cardDrawn, int
 }
 
 int activate_smithy(int currentPlayer, int handPos, struct gameState *state){
-      //+3 Cards
+      //+3 Cards, made bug to be +4 cards
       int i;
       for (i = 0; i < 4; i++)
 	{
