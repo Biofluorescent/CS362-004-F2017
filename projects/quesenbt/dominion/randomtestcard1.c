@@ -37,6 +37,7 @@ int stateValidator(struct gameState* game, int player, int opponent, int deckCou
         return 0;
     }else if(oppDeck != game->deckCount[opponent]){
         printf("TEST FAIL: Incorrect opponent deck count.\n");
+        return 0;
     }
 
     // If test successful
