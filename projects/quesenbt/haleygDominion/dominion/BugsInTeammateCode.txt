@@ -1,0 +1,6 @@
+	In running my previous unit and card tests, I found a multitude of bugs in my teammate's code. The smithy card results in
+one less card in the player's hand than expected along with an extra card in the deck. The village card results in an extra action
+for the player than the normal amount. The Salvager card does not properly discard the correct amount of cards. The adventurer card 
+results in the incorrect card count for the player deck, oppponent deck, and opponent hand. These errors were all found using the card 
+tests I created for the previous assignments. The bugs that cause these errors all seem to be various "off by one" errors in the
+refactored code of dominion. 
